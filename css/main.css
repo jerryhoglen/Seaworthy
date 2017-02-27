@@ -170,6 +170,18 @@ nav a#pull {
 	text-shadow: 2px 2px 4px #454552;
 }
 
+.main_logo {
+	color: #fff;
+	text-align: center;
+	margin-top: -10%;
+	margin-bottom: 7%;
+}
+
+.main_logo span {
+	font-size: 1.5em;
+	font-style: bold;
+}
+
 .title {
 	font-size: 5em;
 	font-weight: 700;
@@ -348,17 +360,14 @@ nav a#pull {
 	padding-top: 7%;
 }
 
-.wrapper_works {
-	margin-left: 2%;
-}
-
 .works {
 	border-radius: 5px;
-	width: 45%;
+	width: 75%;
+	display: inline-block;
 	float: left;
-	padding: 5%;
-	margin: 2%;
-	position: relative;
+	padding: 3%;
+	margin-left: 12.5%;
+	margin-bottom: 2%;
 	-webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
 	-moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
 	box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
@@ -388,11 +397,12 @@ nav a#pull {
 
 #portfolio {
 	background: #454552;
-	height: 750px;
+	height: 800px;
 }
 
 .portfolio_heading {
 	font-size: 3em;
+	color: #fff;
 	text-align: center;
 	margin-top: 7%;
 }
@@ -423,54 +433,47 @@ nav a#pull {
 .contact {
 	background: #566270;
     height: 750px;
+    margin-top: -5%;
 }
 
-.contact_box {
-	width: 26%;
-}
-
-.contact_list {
-	width: 50%;
-	font-weight: 800;
+.contact_page h1 {
+	font-size: 3em;
 	color: #fff;
-	text-shadow: 2px 2px 4px #454552;
-	float: left;
-	margin-top: 10%;
-}
-
-.contact_list h1 {
-	font-size: 4em;
 	text-align: center;
+	padding-top: 7%;
 }
 
-.contact_list li {
-	font-size: 1.5em;
-	line-height: 2em;
-	list-style-type: none;
-	margin-left: 20%;
+.contact_p {
+	font-size: 1.75em;
+	text-indent: 25px;
+	color: #fff;
+	display: inline;
+	float: left;
+	width: 40%;
+	margin-left: 7%;
+	margin-top: 5%;
 }
 
-.contact_list span {
-	font-size: 1.2em;
+.fa {
+	color: #fff;
 }
+
 
 .contact_form {
-	font-weight: 700;
-	font-size: 1.1em;
-	color: #D4DFE6;
-	float: right;
-	margin-top: 12%;
-	margin-right: 15%;
-	border-radius: 10px;
-	padding: 2% 2% 2% 1%;
+	margin-top: 3%;
+	margin-left: 15%;
+	width: 20%;
+	float: left;
 }
 
 .button_form {
 	border: none;
 	outline: none;
 	border-radius: 5px;
+	font-size: 1.5em;
 	font-weight: 700;
 	color: #000;
+	margin-right: 25%;
 	text-decoration: none;
 }
 
@@ -478,11 +481,9 @@ input[type=submit] {
 	font-family: 'Josefin Slab', serif;
 }
 
-footer {
-	font-size: 1.2em;
-	padding-bottom: .5px;
+.footer_adjust {
 	float: right;
-	margin-right: 2%;
+	margin-right: 5%;
 }
 
 /* Custom, iPhone Retina */ 
@@ -531,7 +532,7 @@ footer {
         #get_in_touch {
         	height: 900px;
         }
-        .contact_list {
+        .contact_info {
         	width: 75%;
         	font-size: .75em;
         	margin-left: 5%;
@@ -589,7 +590,7 @@ footer {
         #get_in_touch {
         	height: 900px;
         }
-        .contact_list {
+        .contact_info {
         	width: 75%;
         	font-size: .75em;
         	margin-left: 12.5%;

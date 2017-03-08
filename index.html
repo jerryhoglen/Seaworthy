@@ -9,35 +9,39 @@
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
 	</head>
 	<body>
 		<div class="page_wrapper">
 		<section id="home"> <!-- main page -->
-			<div id="wrapper">
-					<nav class="cf">
-						<ul class="cf">
-							<li><a href="#get_in_touch">Get in touch</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#how_it_works">How it works</a></li>
-							<li><a href="#services_page">Services</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#home">Home</a></li>
-						</ul>
-						<a href="#" id="pull">Menu</a>
-					</nav>
-				</header>
+			<header>
+			<div id="nav-trigger">
+            	<span>Menu</span>
+        	</div>
+        	<nav id="nav-main">
+            	<ul>
+                	<li><a href="#home">Home</a></li>
+                	<li><a href="#about">About</a></li>
+                	<li><a href="#services_page">Services</a></li>
+                	<li><a href="#how_it_works">How it works</a></li>
+                	<li><a href="#portfolio">Portfolio</a></li>
+                	<li><a href="#get_in_touch">Contact</a></li>
+            	</ul>
+        	</nav>
+        	<nav id="nav-mobile"></nav>
+      		</header>
 				<div data-scroll class="content">
 					<h1 class="main_logo"><span>SEAWORTHY</span> | web design and development |</h1>
 					<h2 class="sub_title">"The web is an ocean of constant change, is your website worthy of navigating this environment?"</h2>
 				</div> <!-- content div -->
 				<div data-scroll class="button_wrapper">
-					<a href="#about" class="button button_color">Learn More</a>
+					<a href="#services_page" class="button button_color">Learn More</a>
 					<a href="#get_in_touch" class="button button_color">Contact</a>
 				</div> <!-- button div -->
 			</div> <!-- wrapper -->
 		</section> <!-- end main page -->
 
-		<section id="services" class="cf"> <!-- services page -->
+		<section id="services"> <!-- services page -->
 			<div data-scroll class="wrapper">
 				<div class="service">
 					<h3>Website redesign or CMS development</h3>
@@ -46,7 +50,7 @@
 				</div> <!--3 sections -->
 				<div class="service">
 					<h3>Custom web design and web development</h3>
-					<p>At Seaworthy we can build the site of your dreams. Our design team will work with you to create a design that will bring your personal website or business to life!</p>
+					<p>At Seaworthy we can build the site of your dreams. Our design team will work with you to create a design that will bring your personal website or business to life! From idea to design to launch the process is seamless!</p>
 					<a href="#" class="button_wrapper button button_color2">More Info</a>
 				</div> <!--3 sections -->
 				<div class="service">
@@ -55,7 +59,6 @@
 					<a href="#" class="button_wrapper button button_color2">More Info</a>
 				</div> <!--3 sections -->
 			</div>
-			<a href="#"<i class="fa fa-angle-double-down" style="font-size:36px"></i></a>
 		</section> <!-- services page -->
 
 		<section id="about"> <!-- about page -->
@@ -74,9 +77,10 @@
 			</div> <!-- end about header div -->
 		</section> <!-- end about page -->
 		
-		<section class="cf services_details"> <!-- services detail page -->
+		<section class="services_details" id="services_page"> <!-- services detail page -->
+			<h1 class="services_header">Services</h1>
 			<div class="wrapper">
-				<div  id="services_page" data-scroll class="details">
+				<div data-scroll class="details">
 					<h3>Website redesign or CMS development</h3>
 					<p>Should you choose a website redesign or Content Management System? Does your website not deliver the results you are looking for or were expecting? Is your website responsive on all devices? Do elements are of your old design not work anymore? Your competitors have more effective sites? If you can answer yes to at least one of those questions then a website redign or content management system is probably needed for your business!</p>
 				</div> <!--3 sections -->
@@ -91,7 +95,7 @@
 			</div>
 		</section> <!-- services detail page -->
 
-		<section class="cf howitworks"> <!-- how it works page -->
+		<section class="howitworks"> <!-- how it works page -->
 			<h1 id="how_it_works" data-scroll class="section_header">How it works</h1>
 				<div data-scroll class="works step1">
 					<h2>Step 1. Free Consultation</h2>
@@ -131,7 +135,7 @@
 				</div> <!--4 sections -->
 		</section> <!-- how it works page -->
 		
-		<section id="portfolio" class="cf portfolio_section"> <!-- portfolio page -->
+		<section id="portfolio" class="portfolio_section"> <!-- portfolio page -->
 			<div class="wrapper">
 				<h1 class="portfolio_heading">Portfolio</h1>
 				<div data-scroll class="portfolio_examples">
@@ -143,10 +147,10 @@
 		</section> <!-- portfolio page -->
 
 		<section  id="get_in_touch" class="contact"> <!-- contact page -->
-			<div class="contact_page wrapper">
+			<div class="contact_page">
 				<h1>Get in touch</h1>	
           		<div>
-          			<p class="contact_p">We are available to answer any questions that you have. Please feel free to reach out via the contact form to the right or you can call us directly with the information below. We are located in Suffolk County on Long Island but work all over the greater New York City area!<br><a href="tel:6315791319"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i></a></p>
+          			<p class="contact_p">We are available to answer any questions that you have. Please feel free to reach out via the contact form to the right or you can call us directly with the email and phone number provided here. We are located in Suffolk County on Long Island but work all over the greater New York City area!</p>
 					<form action="https://formspree.io/jerryhoglen.webdev@gmail.com" class="contact_form" method="POST">
     					<label for="name">Name:</label><br><input type="text" class="button_form" name="name" value=""><br>
     					<label for="contact">Contact number:</label><br><input type="text" class="button_form" name="contact" value=""><br>
@@ -154,6 +158,11 @@
     					<label for="message">Ask any questions or just say hello here!</label><textarea name="message" class="button_form" cols="30" rows="10"></textarea><br>
     					<input type="submit" class="button_form" value="Submit">
 					</form>
+					<ul class="contact_list">
+						<li>Reach us directly at</li>
+						<li>Info@seaworthywebdesign.com</li>
+						<li>Call: 631-579-1319</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -164,8 +173,10 @@
 			</div>
 		</footer>
 		</div> <!-- page wrapper -->
-		<script src="jquery-3.1.1.min.js"></script>
-		<script src="ScrollTrigger.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/navbar.js"></script>
 		<script>
 		document.addEventListener('DOMContentLoaded', function(){
     		var trigger = new ScrollTrigger();

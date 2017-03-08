@@ -1,0 +1,70 @@
+@media screen and (min-width: 480px) {
+
+}
+
+
+@media screen and (min-width: 980px) {
+
+body {
+	font-size: 16px;
+}
+
+#home {
+	padding-bottom: 25%;
+}
+
+
+.invisible {
+    transition: opacity 2.5s ease;
+    opacity: 0.0;
+}
+
+.visible {
+    transition: opacity 1.75s ease;
+    opacity: 1.0;
+}
+
+.service {
+	display: inline-block;
+	width: 26%;
+	margin: -10% 1% 5% 1%;
+}
+
+#about {
+	padding-top: 3%;
+}
+
+.services_details {
+	height: 1400px;
+}
+
+.services_page {
+	padding-top: 5%;
+}
+
+.howitworks {
+	margin-top: -5%;
+	height: 1400px;
+}
+
+#how_it_works {
+	padding-top: 7%;
+}
+
+.contact_list {
+	font-size: 1.25em;
+}
+
+}
+
+@media screen and (max-width: 887px) {
+	#nav-trigger {
+    display: block; }
+
+  	nav#nav-main {
+    display: none; }
+
+  	nav#nav-mobile {
+    display: block; } }
+
+}
